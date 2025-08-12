@@ -1,20 +1,20 @@
 public class Main {
-    
-   static void printFibonacci(int n) {
-      int a = 0, b = 1;
-      System.out.print(a + " " + b);
 
-      for (int i = 2; i < n; i += 1) {
-         int next = a + b;
-         System.out.print(" " + next);
-         a = b;
-         b = next;
+   static void fibonacciSeries(int num) {
+      int numOne = 0, numTwo = 1;
+      System.out.print(numOne + " " + numTwo);
+      for (int i = 2; i < num; i += 1)  {
+         int sum;
+         sum = numOne + numTwo;
+         System.out.print(" " +sum);
+         numOne = numTwo;
+         numTwo = sum;
       }
    }
 
-    public static void main(String[] args) {
-        int n = 10; 
-        System.out.print("Fibonacci Series: ");
-        printFibonacci(n);
-    }
+   public static void main(String[] args) {
+      int number = 20;
+      System.out.println("Fibonacci Series :");
+      fibonacciSeries(number);
+   }
 }
