@@ -13,7 +13,7 @@ public class FibonacciSeries {
 
    static void fibonacciSeries (int num) {
       int a = 0, b = 1;
-      System.out.print(a + " " + b);
+      
       for (int ind = 2; ind < num; ind += 1) {
          b = a + b;
          a = b + a - (b = a);
