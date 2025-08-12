@@ -10,10 +10,10 @@ public class FibonacciSeries {
          System.out.print(" " + numTwo);
       }
    }
+   
    public static void main(String ... args) {
       int number = 9;
       System.out.print("Fibonacci series : ");
       fiboSeries(number);
-
    }
 }
