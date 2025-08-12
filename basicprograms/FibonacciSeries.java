@@ -15,10 +15,9 @@ public class FibonacciSeries {
       int a = 0, b = 1;
       System.out.print(a + " " + b);
       for (int ind = 2; ind < num; ind += 1) {
-         int sum;
-         sum = a + b;
+         b = a + b;
          a = b + a - (b = a);
-         System.out.print(" " + sum);
+         System.out.print(" " + b);
       }      
    }
 
