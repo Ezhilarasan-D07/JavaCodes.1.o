@@ -21,9 +21,16 @@ public class FibonacciSeries {
       }      
    }
 
+   static int sumOfFiboSeries (int num) {
+      int a = 0, b = 1, sum = 0;
+      for (int ind = 0; ind < num; ind += 1) {
+         b = a + b;
+         a = b + a - (b = a);
+         sum += b;
+      }  return sum;
+   }
    public static void main(String ... args) {
-      int number = 9;
-      System.out.print("Fibonacci series : ");
-      fibonacciSeries(number);
+      int number = 11;
+      System.out.print("Sum of fibonacci series of 1st " + number + " number is " + sumOfFiboSeries(number));
    }
 }
