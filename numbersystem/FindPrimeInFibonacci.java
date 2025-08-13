@@ -1,14 +1,7 @@
 
-/* - - - - - - - - - - - - - - - 
- * find prime number.
- * find fibonacci no.
- * find intersection number.
- - - - - - - - - - - - - - - - */
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class FindPrimeInFibonacci {
-
    static int fibonacci (int num) {
       if (num <= 1)
          return num;
@@ -16,18 +9,17 @@ public class FindPrimeInFibonacci {
    }
 
    static boolean isPrime (int num) {
-      if (num <= 1)
+      if (num <= 1) 
          return false;
       int ind = 2;
       while (ind * ind <= num) {
          if (num % ind == 0)
             return false;
          ind += 1;
-      }
-      return true;
+      }  return true;
    }
 
-   public static void main (String[] args) {
+   static public void main (String ... args) {
       Scanner input = new Scanner(System.in);
       System.out.print("Enter the number : ");
       int number = input.nextInt(); // limit.
@@ -36,9 +28,9 @@ public class FindPrimeInFibonacci {
          int fib = fibonacci(ind);
          if (fib > number)
             break;
-         if (isPrime(fib)) {
+         if (isPrime(fib))
             System.out.print(fib + " ");
-         }  ind += 1;
+         ind += 1;
       }  input.close();
    }
 }
