@@ -17,6 +17,5 @@ public class FactorsOfNumber {
       int number = input.nextInt();
       System.out.println("the factors of " + number + " is " + factorsOfNumber(number));
       input.close();
-
    }
 }
