@@ -15,12 +15,10 @@ public class MaximumAndMinimum {
       int min = arr [0];
       int max = arr [0];
       for (int ind = 1; ind < arr.length; ind += 1) {
-         if (min > arr[ind]) {
-            min = arr[ind];
-         }                
-         if (max < arr[ind]) {
+         if (min > arr[ind]) 
+            min = arr[ind];               
+         if (max < arr[ind]) 
             max = arr[ind];
-         }
       }  return new int [] {min, max};
    }
 
