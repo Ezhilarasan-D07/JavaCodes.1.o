@@ -3,6 +3,7 @@ public class CountCharacters {
    static int findLength (String str) {
       int count = 0;
       for (char c: str.toCharArray()) {
+         System.err.println(c);
          count += 1;
       }  return count;
    }
