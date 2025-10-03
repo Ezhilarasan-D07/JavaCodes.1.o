@@ -1,6 +1,6 @@
 
 import java.util.Arrays;
-public class BubbleSort {
+public class BulbbleSortRec {
     static void bubbleSort (int arr [], int row, int col) {
         if (row == 0)
             return;
