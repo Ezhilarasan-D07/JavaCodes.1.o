@@ -22,5 +22,6 @@ public class ConcatString {
         System.out.print("Enter your Second name : ");
         String b = input.next();
         System.out.println("The unique chars among the strings are : " + concatStr(a, b));
+        input.close();
     }
 }
