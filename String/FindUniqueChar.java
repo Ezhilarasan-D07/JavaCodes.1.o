@@ -34,5 +34,6 @@ public class FindUniqueChar {
         String b = input.next();
         System.out.println("The unique chars among the strings are : " + 
             findUniqueCharacters(a, b));
+            input.close();
     }
 }
