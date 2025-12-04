@@ -18,11 +18,11 @@ import java.util.HashMap;
 public class MajorityElement    {
 
     static int findMajorityElement (int ... arr) {
-
+        // map to count repetition.
         HashMap <Integer, Integer> intMap = new HashMap <> ();
         for (int num: arr) 
             intMap.put(num, intMap.getOrDefault(num, 0) + 1);
-
+        // iterate and return if the element repeats more than half a length.
         for (HashMap.Entry <Integer, Integer> num: intMap.entrySet()) 
             if (num.getValue() > (arr.length / 2)) 
                 return num.getKey();
